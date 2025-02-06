@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Additional Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      gap: 15px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+    }
+    .navbar a:hover {
+      background-color: white;
+      color: black;
+    }
+    .header {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    .header h1 {
+      margin-top: 80px; /* Added extra space here */
+    }
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 40px;
+      background-color: #f5f5f5;
+    }
+    .service-card {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      transition: box-shadow 0.3s;
+    }
+    .service-card:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .service-card img {
+      width: 100%;
+      height: auto;
+      max-height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin: 15px 0;
+    }
+    .service-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .service-card button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .service-card button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#services">Services</a>
+      <a href="#blog">Blog</a>
+      <a href="#listings">Listings</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <h1>Additional Services</h1>
+  </div>
+
+  <div class="services-container">
+    <div class="service-card">
+      <img src="mortgage-calculator.jpg" alt="Mortgage Calculator">
+      <h3>Mortgage Calculator</h3>
+      <p>Calculate your monthly mortgage payments</p>
+      <button>Learn More</button>
+    </div>
+    <div class="service-card">
+      <img src="investing.jpg" alt="Investing">
+      <h3>Investing</h3>
+      <p>Earn rental income while the property appreciates over time, or flip homes</p>
+      <button>Learn More</button>
+    </div>
+    <div class="service-card">
+      <img src="buying.jpg" alt="Buying">
+      <h3>Buying</h3>
+      <p>Browse through our listings to find your ideal home</p>
+      <button>Learn More</button>
+    </div>
+    <div class="service-card">
+      <img src="selling.jpg" alt="Selling">
+      <h3>Selling</h3>
+      <p>Let us help you sell your property quickly & efficiently</p>
+      <button>Learn More</button>
+    </div>
+  </div>
+</body>
+</html>
