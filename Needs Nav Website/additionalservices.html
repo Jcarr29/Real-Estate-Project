@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\device-width, initial-scale=1.0">
+    <title>Additional Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .service-card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: left;
+        }
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .service-card h3 {
+            margin-top: 10px;
+        }
+        .service-card p {
+            font-size: 14px;
+            color: #666;
+        }
+        .service-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #6ea8fe;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .header img {
+            width: 100px;
+            height: auto;
+        }
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .services {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="LogoDM.png" alt="Logo">
+            <div class="nav">
+                <a href="#">Home</a>
+                <a href="#">About Me</a>
+                <a href="#">Services</a>
+                <a href="#">Blog</a>
+                <a href="#">Listings</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <h2>Additional Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <img src="mortgage.jpg" alt="Mortgage Calculator">
+                <h3>Mortgage Calculator</h3>
+                <p>Calculate your monthly mortgage payments</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-card">
+                <img src="house.jpg" alt="Investing">
+                <h3>Investing</h3>
+                <p>Earn rental income while the property appreciates over time, or flip homes</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-card">
+                <img src="R.jpg" alt="Buying">
+                <h3>Buying</h3>
+                <p>Browse through our listings to find your ideal home</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-card">
+                <img src="selling-guide.jpg" alt="Mortgage Calculator">
+                <h3>Selling</h3>
+                <p>Let us help you sell your property quickly & efficiently</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
