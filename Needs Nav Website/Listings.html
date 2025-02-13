@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darryl Milledge - Real Estate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+        }
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .hero button {
+            padding: 15px 30px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .hero button:hover {
+            background-color: #218838;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img src= "LogoDM.png">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Listings</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Your Dream Home Awaits!</h1>
+        <p>Explore Jacksonville’s Finest Homes for Every Budget</p>
+        <button>Browse Listings</button>
+    </section>
+
+    <!-- Gallery Section -->
+    <div class="gallery">
+        <img src="https://via.placeholder.com/300x200" alt="House 1">
+        <img src="https://via.placeholder.com/300x200" alt="House 2">
+        <img src="https://via.placeholder.com/300x200" alt="House 3">
+        <img src="https://via.placeholder.com/300x200" alt="House 4">
+        <img src="https://via.placeholder.com/300x200" alt="House 5">
+        <img src="https://via.placeholder.com/300x200" alt="House 6">
+        <img src="https://via.placeholder.com/300x200" alt="House 7">
+        <img src="https://via.placeholder.com/300x200" alt="House 8">
+    </div>
+</body>
+</html>
 
