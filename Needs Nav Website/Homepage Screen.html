@@ -4,19 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Darryl Milledge - Real Estate</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: "Roboto", sans-serif;
     }
     .header {
-      background-image: url('skyline.webp'); /* Replace with skyline image URL */
+      background-image: url('skyline.webp');
       background-size: cover;
       background-position: center;
       color: white;
+      height: 80vh;
       padding: 50px 20px;
       text-align: center;
       position: relative;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* Add drop shadow */
+
     }
     .navbar {
       position: absolute;
@@ -60,7 +66,6 @@
     }
     .profile-container {
       width: 350px;
-      height: auto;
       background-color: rgba(0, 0, 0, 0.7);
       border-radius: 10px;
       padding: 20px;
@@ -93,53 +98,94 @@
       cursor: pointer;
     }
     .content {
-      display: flex;
-      justify-content: space-around;
-      padding: 40px 20px;
-      text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-image: url(''); /* Image URL */
+    background-size: cover; /* Make the image cover the entire content section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    position: relative; /* Necessary for positioning the pseudo-element */
+    padding: 40px 20px;
+    text-align: center;
     }
+
+
+
+
+
     .card {
-      width: 30%;
-      height: 350px;
-      text-align: center;
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Horizontally center the content */
+      justify-content: center; /* Vertically center the content */
+      gap: 10px; /* Space between image and text */
+      width: 30%; /* Make the cards take up 30% of the width */
+      height: 350px; /* Fixed height for consistency */
       cursor: pointer;
-      transition: transform 0.3s, box-shadow 0.3s;
+      font-family: 'Roboto', sans-serif;
+      text-align: center; /* Center text in each card */
+      box-sizing: border-box; /* Ensure padding doesn't mess with size */
     }
+
     .card img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
+      width: 400px; /* Ensure the images take the full width of the card */
+      height: 200px; /* Fixed height for consistency */
+      object-fit: cover; /* Ensure the image covers the area */
       border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s; /* Add transition only for image */
     }
+
+    .card img:hover {
+      transform: scale(1.05); /* Scale image on hover */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    }
+
     .card h3 {
-      margin-top: 10px;
+      font-size: 25px;
+      color: #333;
+      margin: .5;
     }
-    .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    .card h3:hover {
+      font-size: 25px;
+      color: #ffa200;
+      margin: .5;
     }
+
     .card a {
-      text-decoration: none;
-      color: black;
+      text-decoration: none; /* Remove underline from links */
+      color: inherit; /* Inherit text color from h3 */
     }
+
     .cta-section {
-      background: linear-gradient(to bottom, #cce5ff, #e6f7ff);
-      text-align: center;
-      padding: 50px 20px;
+    position: relative;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, rgb(41, 94, 117), black); /* Gradient from top color to black */
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 -7px 20px rgba(0, 0, 0, 0.5); /* Add drop shadow */
+
     }
+
     .cta-section h2 {
-      font-size: 3rem;
-      line-height: 1.2;
+      font-weight: bold;
+      font-size: 6rem;
       margin-bottom: 20px;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
     }
     .cta-section button {
       padding: 15px 30px;
-      background-color: green;
+      background-color: rgb(255, 153, 0);
       color: white;
       border: none;
       font-size: 18px;
       border-radius: 5px;
       cursor: pointer;
+      
     }
     .logo {
       position: absolute;
@@ -151,8 +197,8 @@
       left: 20px;
     }
     .logo-right {
-      bottom: 20px;
-      right: 20px;
+      bottom: 30px;
+      right: 30px;
     }
     .footer {
       display: flex;
@@ -172,14 +218,13 @@
   <div class="header">
     <div class="navbar">
       <a href="#about">About Me</a>
-      <a href="#services">Services</a>
+      <a href="services.html">Services</a>
       <a href="#blog">Blog</a>
       <a href="#listings">Listings</a>
       <a href="#contact">Contact</a>
     </div>
     <a href="#login" class="login">Login/Sign Up</a>
     <img src="LogoDM.PNG" class="logo logo-left" alt="Logo Left">
-    <img src="Sunshine.png" class="logo logo-right" alt="Logo Right">
     <div class="profile">
       <div class="profile-container">
         <img src="DMpic1.jpeg" alt="Darryl Milledge">
@@ -195,36 +240,21 @@
   </div>
 
   <div class="content">
-    <div class="card">
-      <a href="#about">
-        <img src="DMpic2.png" alt="About Me">
-        <h3>About Me</h3>
-      </a>
-    </div>
-    <div class="card">
-      <a href="#listings">
-        <img src="LuxuryHouse1.jpeg" alt="Listings">
-        <h3>Listings</h3>
-      </a>
-    </div>
-    <div class="card">
-      <a href="#resources">
-        <img src="Resources1.jpg" alt="Resources">
-        <h3>Resources</h3>
-      </a>
-    </div>
+    <div class="card"><a href="#about"><img src="DMpic2.png" alt="About Me"><h3>About Me</h3></a></div>
+    <div class="card"><a href="#listings"><img src="LuxuryHouse1.jpeg" alt="Listings"><h3>Listings</h3></a></div>
+    <div class="card"><a href="Services.html"><img src="Resources1.jpg" alt="Services"><h3>Services</h3></a></div>
   </div>
 
   <div class="cta-section">
-    <h2>Buying a home has<br>never been easier</h2>
-    <p>Start your journey today</p>
+    <h2>Buying a home has never <br> been easier.</h2>
     <button>Contact</button>
+    <img src="Sunshine.png" class="logo logo-right" alt="Sunshine Logo">
   </div>
 
   <div class="footer">
-    <a href="#home">Home</a>
+    <a href="Homepage Screen.html">Home</a>
     <a href="#about">About Me</a>
-    <a href="#services">Services</a>
+    <a href="services.html">Services</a>
     <a href="#blog">Blog</a>
     <a href="#listings">Listings</a>
     <a href="#contact">Contact</a>
