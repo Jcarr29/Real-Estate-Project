@@ -1,4 +1,5 @@
-//9f5963fa208e4223b10d778013c55488
+//9f5963fa208e4223b10d778013c55488 dml
+//dde8273b19f64e48a51372ae55d8ee85 dm2
 document.addEventListener("DOMContentLoaded", function () {
     initMap();
     fetchListings();
@@ -37,7 +38,7 @@ function fetchListings() {
     fetch("https://api.rentcast.io/v1/listings/sale?city=Jacksonville&state=FL", {
         method: "GET",
         headers: {
-            "X-Api-Key": "9f5963fa208e4223b10d778013c55488" // Replace with your actual API key
+            "X-Api-Key": "dde8273b19f64e48a51372ae55d8ee85" // Replace with your actual API key
         }
     })
     .then(response => response.json())
