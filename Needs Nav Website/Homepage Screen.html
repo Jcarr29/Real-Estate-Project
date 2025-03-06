@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darryl Milledge - Real Estate</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+    }
+    .header {
+      background-image: url('Images/skyline.webp');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      height: 80vh;
+      padding: 50px 20px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* Add drop shadow */
+
+    }
+    .navbar {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      gap: 15px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 5px;
+
+    }
+    .navbar a:hover {
+      transform: translateY(-3px);
+      transition: transform 0.3s;
+      color: rgb(132, 230, 255);
+    }
+    .login {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+    }
+    .login:hover {
+      transform: translateY(-3px);
+      transition: transform 0.3s;
+      color: rgb(132, 230, 255);
+    }
+    .profile {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .profile-container {
+      width: 350px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    .profile img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+    .search-bar {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .search-bar input {
+      padding: 10px;
+      width: 70%;
+      border: none;
+      border-radius: 5px 0 0 5px;
+    }
+    .search-bar button {
+      padding: 10px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
+    .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-image: url(''); /* Image URL */
+    background-size: cover; /* Make the image cover the entire content section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    position: relative; /* Necessary for positioning the pseudo-element */
+    padding: 40px 20px;
+    text-align: center;
+    }
+
+
+
+
+
+    .card {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Horizontally center the content */
+      justify-content: center; /* Vertically center the content */
+      gap: 10px; /* Space between image and text */
+      width: 30%; /* Make the cards take up 30% of the width */
+      height: 350px; /* Fixed height for consistency */
+      cursor: pointer;
+      font-family: 'Roboto', sans-serif;
+      text-align: center; /* Center text in each card */
+      box-sizing: border-box; /* Ensure padding doesn't mess with size */
+    }
+
+    .card img {
+      width: 400px; /* Ensure the images take the full width of the card */
+      height: 200px; /* Fixed height for consistency */
+      object-fit: cover; /* Ensure the image covers the area */
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s; /* Add transition only for image */
+    }
+
+    .card img:hover {
+      transform: scale(1.05); /* Scale image on hover */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    }
+
+    .card h3 {
+      font-size: 25px;
+      color: #333;
+      margin: .5;
+    }
+    .card h3:hover {
+      font-size: 25px;
+      color: #ffa200;
+      margin: .5;
+    }
+
+    .card a {
+      text-decoration: none; /* Remove underline from links */
+      color: inherit; /* Inherit text color from h3 */
+    }
+
+    .cta-section {
+    position: relative;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, black, rgb(41, 94, 117)); /* Gradient from top color to black */
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 -7px 20px rgba(0, 0, 0, 0.5); /* Add drop shadow */
+
+    }
+
+    .cta-section h2 {
+      font-weight: bold;
+      font-size: 6rem;
+      margin-bottom: 20px;
+      color: white;
+      font-family: 'Cookie', sans-serif;
+      font-weight: 500;
+    }
+    .cta-section button {
+      padding: 15px 30px;
+      background-color: rgb(255, 153, 0);
+      color: white;
+      border: none;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      
+    }
+    .logo {
+      position: absolute;
+      width: 100px;
+      height: auto;
+    }
+    .logo-left {
+      bottom: 20px;
+      left: 20px;
+    }
+    .logo-right {
+      bottom: 30px;
+      right: 30px;
+    }
+    .footer {
+      display: flex;
+      justify-content: center;
+      background-color: black;
+      color: white;
+      padding: 20px;
+    }
+    .footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="navbar">
+      <a href="#about">About Me</a>
+      <a href="additional services.html">Services</a>
+      <a href="BlogPage.html">Blog</a>
+      <a href="listingspg.html">Listings</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+    <a href="Sign Up.html" class="login">Login/Sign Up</a>
+    <img src="Images/WhiteLogoDM.PNG" class="logo logo-left" alt="Logo Left">
+    <div class="profile">
+      <div class="profile-container">
+        <img src="Images/DMpic1.jpeg" alt="Darryl Milledge">
+        <h1>Darryl Milledge</h1>
+        <p>Real Estate Agent</p>
+        <p>Unlocking Dreams, One Door at a Time</p>
+        <div class="search-bar">
+          <input type="text" placeholder="City, Area, Zip, Address">
+          <button>Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="card"><a href="#about"><img src="Images/DMpic2.png" alt="About Me"><h3>About Me</h3></a></div>
+    <div class="card"><a href="listingspg.html"><img src="Images/LuxuryHouse1.jpeg" alt="Listings"><h3>Listings</h3></a></div>
+    <div class="card"><a href="additional services.html"><img src="Images/Resources1.jpg" alt="Services"><h3>Services</h3></a></div>
+  </div>
+
+  <div class="cta-section">
+    <h2>Buying a home has never <br> been easier.</h2>
+    <button>Contact</button>
+    <img src="Images/Sunshine.png" class="logo logo-right" alt="Sunshine Logo">
+  </div>
+
+  <div class="footer">
+    <a href="Homepage Screen.html">Home</a>
+    <a href="#about">About Me</a>
+    <a href="additional services.html">Services</a>
+    <a href="#blog">Blog</a>
+    <a href="listingspg.html">Listings</a>
+    <a href="#contact">Contact</a>
+  </div>
+</body>
+</html>

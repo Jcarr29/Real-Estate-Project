@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Services</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inria+Serif&family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Inria Serif', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f5f7;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background-color: #ffffff;
+            position: fixed;
+            width: 96%;
+            height: 10%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo-container img {
+            width: 100px;
+            height: auto;
+        }
+        .header nav {
+            display: flex;
+            gap: 30px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .header a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .header a:hover {
+            color: #4a90e2;
+            transform: translateY(-3px);
+        }
+        .hero {
+            background: url('Images/house5.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        .hero h1 {
+            position: relative;
+            font-size: 3.5em;
+            z-index: 1;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+        .services {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #ffffff;
+        }
+        .services-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .services-header h2 {
+            font-size: 3em;
+            text-transform: uppercase;
+            color: #333;
+            border-bottom: 3px solid #4a90e2;
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+        .services p {
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        .service-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        .service {
+            width: 320px;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .service:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .service img {
+            width: 70px;
+            margin-bottom: 20px;
+        }
+        .service h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .service p {
+            font-size: 1.2em;
+            margin-bottom: 25px;
+            color: #777;
+        }
+        .service button {
+            background-color: #4a90e2;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: background-color 0.3s;
+        }
+        .service button:hover {
+            background-color: #357ABD;
+        }
+        .footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+        }
+        .footer a {
+            color: #4a90e2;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="Images/WhiteLogoDM.png" alt="DM Logo">
+        </div>
+        <nav>
+            <a href="Homepage Screen.html">Home</a>
+            <a href="#">About Me</a>
+            <a href="additional services.html">Services</a>
+            <a href="BlogPage.html">Blog</a>
+            <a href="listingspg.html">Listings</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <div class="hero">
+        <h1>Premium Real Estate Services</h1>
+    </div>
+
+    <div class="services">
+        <div class="services-header">
+            <h2>Additional Services</h2>
+        </div>
+        <p>Mr. Milledge offers a variety of expert real estate services to assist you in managing and investing in properties, finding your dream home, and more.</p>
+        <div class="service-container">
+            <div class="service"> 
+                <img src="Images/house logo.png" alt="Buying">
+                <h3>Buying</h3>
+                <p>Find the perfect home with our exclusive property listings.</p>
+                <button onclick="window.location.href='listingspg.html'">Learn More</button>
+            </div>
+            <div class="service">
+                <img src="Images/house logo.png" alt="Investing">
+                <h3>Investing</h3>
+                <p>Earn returns from property appreciation or house flipping.</p>
+                <button onclick="window.open('https://www.investor.gov/', '_blank')">Learn More</button>
+            </div>
+            <div class="service">
+                <img src="Images/house logo.png" alt="Mortgage Calculator">
+                <h3>Mortgage Calculator</h3>
+                <p>Calculate your monthly payments to budget effectively.</p>
+                <button onclick="window.open('https://www.bankrate.com/mortgages/mortgage-calculator/', '_blank')">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Darryl Milledge, Real Estate Agent. All Rights Reserved. <br> <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+</body>
+</html>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
