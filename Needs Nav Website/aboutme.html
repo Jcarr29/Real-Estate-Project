@@ -10,18 +10,14 @@
     <style>
         body {
             font-family:  "Parkinsans", sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #f8f8f8;
         }
 		h1{
-			font-size: 36px;
-		
-		
+			font-size: 70px;
 		}
 		.blue-strip {
             width: 300px;
-            background-color: #6c89c8;
+            background-color: #00063F;
             height: 100vh;
             position: fixed;
             right: 0;
@@ -30,7 +26,6 @@
         header {
             display: flex;
             align-items: center;
-            padding: 10px;
             background-color: #fff;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 			width: 200%;
@@ -38,7 +33,6 @@
         .logo {
             font-size: 24px;
             font-weight: bold;
-			
         }
         nav ul {
             list-style: none;
@@ -55,11 +49,10 @@
             font-weight: bold;
         }
         main {
-            display: flex;
-            justify-content: space-between;
-            padding: 50px;
-            max-width: 1200px;
-            margin: auto;
+			display: flex;
+			justify-content: space-between;
+			padding: 20px;
+			margin: 20px;
         }
         .content {
             max-width: 50%;
@@ -72,10 +65,12 @@
             cursor: pointer;
             font-size: 16px;
             margin-top: 20px;
+			font-family:  "Parkinsans", sans-serif;
         }
         .image-section {
             position: relative;
-            max-width: 80%;
+			float: right;
+            max-width: 70%;
         }
         .agent-photo {
             width: 100%;
@@ -89,32 +84,11 @@
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
-        .success {
-            top: 10px;
-            left: -50px;
-        }
-        .sold {
-            bottom: 100px;
-            right: -50px;
-        }
-        .testimonial {
-            position: absolute;
-            bottom: -30px;
-            left: 20px;
-            background: white;
-            padding: 10px;
-            border-radius: 10px;
-            font-style: italic;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-        .footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-            font-size: 1.2em;
-            letter-spacing: 1px;
-        }
+		footer {
+			color: white;
+			margin: 0 10px;
+			text-decoration: none;
+		}
     </style>
 </head>
 <body>
@@ -138,14 +112,20 @@
     <main>
         <section class="content">
             <h1>Meet Your Real Estate Agent</h1>
-            <p>Milledge is a dedicated real estate professional serving Jacksonville, Florida with Sunshine Realty & Co. With 2 years of experience in the real estate market, he specializes in educating about pre-approval for residential and luxury properties.</p>
+            <p>I want to turn your real estate goals into reality!</p>
+			<p>I am a hardworking and dedicated real estate professional serving Jacksonville, Florida with Sunshine Realty & Co!
+				I have worked in retail for over 3 years so I know how frustrating making big purchases can be.
+				With 2 years of experience in the real estate market, I specialize in educating about pre-approval for residential and luxury properties so you 
+				have no worries.</p>
+			<p>As a family man with 9 years in the healthcare field, a FAMU Bachelors of Science, and UF Masters of Science, I am a patient, empathetic, strategic and organized professional.
+				I can assure you will be in great hands working with me. 
+			<p>My commitment to transparency, exceptional service, and personalized attention ensures a smooth real estate journey for YOU! 
+				Whether you're buying, selling, or investing, I am here to guide you with expert advice and market insights!</p> 
+			<p>
 			<button class="learn-more"> <a href="https://www.linkedin.com/in/darryl-milledge-ii-96294574/">Learn More</button>
         </section>
         <section class="image-section">
             <img src="Images/DMpic2.png" alt="Darryl Milledge" class="agent-photo">
-			<div class="badge success">✨ 98% Success Guaranteed</div>
-            <div class="badge sold">🏡 200+ Sold Properties</div>
-            <div class="testimonial">💬 “He is an AMAZING Realtor.” - Jane Doe</div>
         </section>
     </main>
 
