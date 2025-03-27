@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
         body {
-            background-image: url('Images/contacthouse.jpg');
-            background-size: cover;
-            background-position: center;
+            background: url('Images/house4.jpg') no-repeat right center/cover;
             color: white;
+			
         }
         .header {
             display: flex;
@@ -27,13 +26,13 @@
             color: black;
         }
         .logo img {
-            width: 80px; /* Smaller logo size */
+            width: 160px; /* Smaller logo size */
             height: auto;
         }
         .nav-links {
             display: flex;
             gap: 20px;
-            margin-left: auto;
+            margin-left: 20px; /* Align words to the right of the logo */
         }
         .nav-links a {
             text-decoration: none;
@@ -42,7 +41,7 @@
         }
         .container {
             display: flex;
-            justify-content: center;
+            justify-content: flex-end; /* Move container to the right side */
             align-items: center;
             min-height: 90vh;
             padding: 40px;
@@ -51,15 +50,17 @@
             display: flex;
             background: white;
             color: black;
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
             border-radius: 15px;
             overflow: hidden;
             max-width: 1000px;
             width: 90%;
+            border: 5px solid #2a5298;
+            padding: 20px;
         }
         .left-section {
             width: 40%;
-            background: url('Images/house.jpg') no-repeat center center/cover;
+            background: url('Images/house4.jpg') no-repeat center center/cover;
             position: relative;
         }
         .info-box {
@@ -89,14 +90,14 @@
             width: 100%;
             padding: 12px;
             margin: 10px 0;
-            border: 2px solid #40e0d0 ;
+            border: 2px solid #2a5298;
             border-radius: 5px;
             background: #f5f5f5;
         }
         button {
             width: 100%;
             padding: 12px;
-            background: #40e0d0 ;
+            background: #2a5298;
             color: white;
             border: none;
             border-radius: 5px;
@@ -116,9 +117,9 @@
             letter-spacing: 1px;
         }
         .footer a {
-            color: #ffcc00;
-            text-decoration: none;
-            font-weight: bold;
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
         }
         @media (max-width: 768px) {
             .contact-card {
@@ -145,7 +146,7 @@
             <a href="aboutme.html">About Me</a>
             <a href="additional services.html">Services</a>
             <a href="BlogPage.html">Blog</a>
-            <a href="listingspg.html">Listings</a>
+            <a href="#">Listings</a>
             <a href="Contact.html">Contact</a>
         </div>
     </div>
@@ -156,6 +157,7 @@
                     <p><i>&#x1F4CD;</i> 123 Ocean Drive, Jacksonville, FL</p>
                     <p><i>&#x260E;</i> 904-904-4444</p>
                     <p><i>&#x23F0;</i> M-F 9AM-5PM</p>
+                    <p><i>&#x1F4F7;</i>Instagram:@mr_dee2you </p>
                 </div>
             </div>
             <div class="right-section">
@@ -169,6 +171,6 @@
     </div>
     <div class="footer">
         <p>&copy; 2025 Darryl Milledge, Real Estate Agent. All Rights Reserved.<br>
-    </div>
+      </div>
 </body>
 </html>
