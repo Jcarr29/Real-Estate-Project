@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HubSpot - Get in Touch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .navbar a {
+  color: inherit;         /* Matches the surrounding text color */
+  text-decoration: none;  /* Removes underline */
+}
+.navbar a:hover {
+      transform: translateY(-3px);
+      transition: transform 0.3s;
+      color: rgb(132, 230, 255);
+    }
+    .navbar img {
+      height: 120px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar ul li {
+      font-weight: 600;
+    }
+
+    .header {
+      background: linear-gradient(rgba(11, 32, 51, 0.7), rgba(11, 32, 51, 0.7)), url("Images/house4.jpg") no-repeat right center/cover;
+      color: white;
+      padding: 60px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .header-text {
+      max-width: 50%;
+    }
+
+    .header h1 {
+      font-size: 48px;
+      margin: 0 0 20px 0;
+    }
+
+    .header p {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .header img {
+      max-width: 420px;
+      border-radius: 160%;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 60px 20px;
+      background-color: #F8F9FA;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      width: 320px;
+      margin: 20px;
+      padding: 30px 20px;
+      text-align: center;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card i {
+      font-size: 40px;
+      color: #FF7A59;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #0B2033;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .contact-box {
+      background-color: #fff0f0;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      color: #0B2033;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .contact-box p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .contact-box form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-box input,
+    .contact-box textarea {
+      padding: 15px;
+      border: 2px solid #ffe3e3;
+      border-radius: 10px;
+      font-size: 16px;
+      font-family: 'Inter', sans-serif;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .contact-box input:focus,
+    .contact-box textarea:focus {
+      border-color: #FF7A59;
+      background-color: #fffafa;
+    }
+
+    .contact-box button {
+      padding: 15px;
+      background-color: #FF7A59;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-box button:hover {
+      background-color: #e86747;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #0B2033;
+      color: white;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+
+<body>
+  <nav class="navbar">
+    <img src="Images/WhiteLogoDM.png" alt="DM Logo">
+    <ul>
+      <li><a href="Homepage Screen.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="additional services.html">Services</a></li>
+      <li><a href="BlogPage.html">Blog</a></li>
+      <li><a href="##">Listings</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="header">
+    <div class="header-text">
+      <h1>Get in touch</h1>
+      <p>We'd love to hear from you! Whether you're looking to learn more about buying ,selling or investing, here's how you can reach us.</p>
+    </div>
+    <img src="Images/client.jpeg" alt="Support agent" />
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <i class="fas fa-phone-alt"></i>
+      <h3>Talk to Me</h3>
+	  <p> 407-407-4077 <p>
+      <p>Interested in quick communication? Just pick up the phone to chat with me. Im here to help.</p>
+	  
+    </div>
+
+    <div class="card">
+      <i class="fab fa-instagram"></i>
+      <h3>Social Media</h3>
+	  <p> @mr_dee2you <p>
+      <p>Stay Connected! Check out our Instagram post for live updates and videos of homes nearby.</p>
+	 
+    </div>
+
+    <div class="card">
+      <i class="fas fa-map-marker-alt"></i>
+	        <h3>Visit Us</h3>
+			<p> 1354 N Laura St Ste 101, Jacksonville,Fl 32206 <p>
+      <p> Prefer connecting in person? Stop by my office to have a life changing conversation.</p>
+    </div>
+  </section>
+
+  <section class="contact-box">
+    <h2>Send us A Quick Message💬</h2>
+    <p>We're happy to help! Fill out the form and we'll get back to you shortly. .</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Darryl Milledge, Real Estate Agent. All Rights Reserved.<br>
+  </footer>
+</body>
+</html>
+
